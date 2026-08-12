@@ -1,40 +1,91 @@
 @font-face {
-    font-family: 'Inter';
-    src: url('fonts/Inter-VariableFont_opsz\,wght.ttf');
+	font-family: 'Inter';
+	src: url('fonts/Inter-VariableFont_opsz\,wght.ttf');
 }
 
 @font-face {
-    font-family: 'Undefined';
-    src: url('fonts/undefined-medium.woff2') format('woff2');
+	font-family: 'Undefined';
+	src: url('fonts/undefined-medium.woff2') format('woff2');
 }
 
 body {
-    background-color: rgb(25, 25, 28);
-    color: white;
-    font-family: Inter;
-    padding: 2rem;
+	background-color: rgb(25, 25, 28);
+	color: white;
+	font-family: Inter;
+	padding: 2rem;
 }
 
 h1 {
-    font-size: 6rem;
-    font-family: Inter;
-    font-weight: 900;
-    /* letter-spacing: 0.05rem; */
+	font-size: 6rem;
+	font-family: Inter;
+	font-weight: 900;
+	/* letter-spacing: 0.05rem; */
 }
 
+/* NOTE: Top Section */
+.top-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.top-bar div {
+	flex: 1;
+}
+
+.top-left {
+	justify-content: left;
+}
+
+.top-center {
+	justify-content: center;
+}
+
+/* NOTE: Nav Section */
+.nav-container {
+	display: flex;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+	overflow: hidden;
+	background-color: #333333;
+	border-radius: 0.8rem;
+}
+
+ul li {
+	float: left;
+}
+
+ul li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px;
+	text-decoration: none;
+}
+
+ul li a:hover {
+	background-color: #111111;
+}
+
+
+/* NOTE: Grid Section */
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    gap: 16px;
-    height: 400px;
-    width: 400px;
-    margin: auto;
-    margin-top: 4rem;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	gap: 8px;
+	height: 400px;
+	width: 400px;
+	margin: auto;
+	margin-top: 4rem;
 }
 
 .grid-container button {
-    width: 100%;
-    border-radius: 0.8rem;
-    border: 0;
+	width: 100%;
+	border-radius: 0.8rem;
+	border: 0;
 }
